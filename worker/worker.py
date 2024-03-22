@@ -52,7 +52,6 @@ def main():
     """
     # Connect to Redis db
     db = redis_db()
-
     while True:
         message_json = redis_queue_pop(db)
         process_message(db, message_json)
