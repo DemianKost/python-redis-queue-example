@@ -15,7 +15,6 @@ def redis_db():
         host=config.redis_host,
         port=config.redis_port,
         db=config.redis_db_number,
-        password=config.redis_password,
         decode_responses=True
     )
 

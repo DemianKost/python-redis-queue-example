@@ -15,7 +15,6 @@ def redis_db():
         host=config.redis_host,
         port=config.redis_port,
         db=config.redis_db_number,
-        password=config.redis_password,
         decode_responses=True
     )
 
@@ -57,3 +56,6 @@ def main():
     while True:
         message_json = redis_queue_pop(db)
         process_message(db, message_json)
+
+if __name__ == '__main__':
+    main()

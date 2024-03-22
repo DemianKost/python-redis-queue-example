@@ -5,7 +5,7 @@ remember to use .env file for all your env variables
 
 redis_host = "localhost"
 redis_port = 6379
-redis_db_number = 2
+redis_db_number = 3
 redis_user = "default"
 redis_password = "password"
 redis_queue_name = "demo"
